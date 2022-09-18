@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SignalRClient.MainPage">
+
+    <Grid
+        RowDefinitions="Auto, 7*, Auto, Auto">
+        <Entry
+            x:Name="txtUsername"
+            Placeholder="Your name"/>
+
+        <ScrollView
+            Grid.Row="1">
+            <Label
+                x:Name="lblChat"
+                FontSize="18"
+                HorizontalOptions="StartAndExpand"
+                TextType="Html"></Label>
+        </ScrollView>
+
+        <Entry
+            Grid.Row="2"
+            x:Name="txtMessage"
+            Placeholder="Enter your message"/>
+
+        <Button
+            Grid.Row="3"
+            x:Name="btnSend"
+            Text="Send"
+            HorizontalOptions="FillAndExpand"
+            Clicked="btnSend_Clicked"/>
+
+    </Grid>
+
+</ContentPage>
